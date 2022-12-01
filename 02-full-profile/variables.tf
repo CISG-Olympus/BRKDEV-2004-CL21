@@ -13,48 +13,46 @@ variable "local_ntp_servers" {
     description = "NTP Server - Terraform deployed"
     type = list
     default = [ 
-        "0.us.pool.ntp.org",
-        "1.us.pool.ntp.org",
-        "2.us.pool.ntp.org"
+        "198.18.128.1"
     ]
 }
 
 variable "local_time_zone" {
     description = "Time Zone - Terraform deployed"
     type = string
-    default = "America/New_York"
+    default = "Europe/London"
 }
 
 variable "ipv4_dns_server_1" {
     description = "IPv4 DNS Server - Terraform deployed"
     type = string
-    default = "208.67.222.222"
+    default = "198.19.179.201"
 }
 
 variable "ipv4_dns_server_2" {
     description = "IPv4 DNS Server 2- Terraform deployed"
     type = string
-    default = "208.67.220.220"
+    default = "198.18.133.1"
 }
 
 variable "smtp_sender_email" {
     description = "SMTP Client sender email address"
     type = string
-    default = "sender@example.com"
+    default = "cisgplatform@gmail.com"
 }
 
 variable "smtp_recipients_email" {
     description = "SMTP Client recipient email address"
     type = list
     default = [
-        "recipient@example.com"
+        "cisgplatform@gmail.com"
     ]
 }
 
 variable "smtp_outgoing_server" {
     description = "SMTP Client outbound email server"
     type = string
-    default = "mail.example.com"
+    default = "smtp.gmail.com"
 }
 
 ## Note: SNMP community and TRAP community strings are defined in credentials.tf
