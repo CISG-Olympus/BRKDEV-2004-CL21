@@ -5,7 +5,7 @@ resource "intersight_server_profile" "srvprof_server1" {
     }
 
     description = "Terraform deployed"
-    name = "SrvProf-Server1"
+    name = "MyServerProfile"
     action = "No-op"
 
     assigned_server {
