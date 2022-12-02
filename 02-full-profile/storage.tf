@@ -1,4 +1,4 @@
-# Define the Disk Group policy (generic to C240 M4L servers with 12 drives)
+# Define the Disk Group policy (generic to C240 M4L servers with 6 drives)
 resource "intersight_storage_disk_group_policy" "c240_m4l_raid6_all_drives" {
     organization {
         moid = data.intersight_organization_organization.default.moid
@@ -27,24 +27,6 @@ resource "intersight_storage_disk_group_policy" "c240_m4l_raid6_all_drives" {
         }
         disks {
             slot_number = 6
-        }
-        disks {
-            slot_number = 7
-        }
-        disks {
-            slot_number = 8
-        }
-        disks {
-            slot_number = 9
-        }
-        disks {
-            slot_number = 10
-        }
-        disks {
-            slot_number = 11
-        }
-        disks {
-            slot_number = 12
         }
     }
 }
