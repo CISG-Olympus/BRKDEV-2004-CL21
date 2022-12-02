@@ -3,8 +3,8 @@
 ###      TF_VAR_target_organization
 
 ###  devices.tf
-variable "hxaf-e-220_device_id" {
-    description = "HX Edge Node Serial Number"
+variable "c240_m4l_lab_device_id" {
+    description = "UCS C240 Serial Number"
     type = string
 }
 
